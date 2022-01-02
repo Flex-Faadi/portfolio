@@ -219,46 +219,46 @@
         });
       }),
       t("#contact .contact-section", function () {
-        // e("#contact .contact-section .contact-form").on("submit", function (t) {
-        //   var i = e(this),
-        //     a = i.find("#contact-submit"),
-        //     n = a.text(),
-        //     o = i.find(".contact-feedback");
-        //   t.preventDefault(),
-        //     a.html("Wait...").addClass("wait").prop("disabled", !0),
-        //     setTimeout(function () {
-        //       e.ajax({
-        //         url: i.attr("action"),
-        //         type: "POST",
-        //         data: i.serialize(),
-        //       }).done(function (e) {
-        //         "success" == e
-        //           ? (a.removeClass("wait").html("Success").addClass("success"),
-        //             o
-        //               .addClass("success")
-        //               .html("Thank you for your message. It has been sent.")
-        //               .fadeIn(200),
-        //             setTimeout(function () {
-        //               a.html(n).removeClass("success").prop("disabled", !1),
-        //                 o.fadeOut(200).removeClass("success").html("");
-        //             }, 6e3),
-        //             i[0].reset())
-        //           : (console.log(e),
-        //             a.removeClass("wait").html("Error").addClass("error"),
-        //             o
-        //               .addClass("error")
-        //               .html(
-        //                 "Server error! Please check your browser console log for more details."
-        //               )
-        //               .fadeIn(200),
-        //             setTimeout(function () {
-        //               a.html(n).removeClass("error").prop("disabled", !1),
-        //                 o.fadeOut(200).removeClass("error").html("");
-        //             }, 6e3));
-        //       });
-        //     }, 1e3);
-        // });
-    });
+        e("#contact .contact-section .contact-form").on("submit", function (t) {
+          var i = e(this),
+            a = i.find("#contact-submit"),
+            n = a.text(),
+            o = i.find(".contact-feedback");
+          t.preventDefault(),
+            a.html("Wait...").addClass("wait").prop("disabled", !0),
+            setTimeout(function () {
+              e.ajax({
+                url: i.attr("action"),
+                type: "POST",
+                data: i.serialize(),
+              }).done(function (e) {
+                "success" == e
+                  ? (a.removeClass("wait").html("Success").addClass("success"),
+                    o
+                      .addClass("success")
+                      .html("Thank you for your message. It has been sent.")
+                      .fadeIn(200),
+                    setTimeout(function () {
+                      a.html(n).removeClass("success").prop("disabled", !1),
+                        o.fadeOut(200).removeClass("success").html("");
+                    }, 6e3),
+                    i[0].reset())
+                  : (console.log(e),
+                    a.removeClass("wait").html("Error").addClass("error"),
+                    o
+                      .addClass("error")
+                      .html(
+                        "Server error! Please check your browser console log for more details."
+                      )
+                      .fadeIn(200),
+                    setTimeout(function () {
+                      a.html(n).removeClass("error").prop("disabled", !1),
+                        o.fadeOut(200).removeClass("error").html("");
+                    }, 6e3));
+              });
+            }, 1e3);
+        });
+      });
   }),
     e(window).on("load", function () {
       e(".preloader-icon").fadeOut(400),

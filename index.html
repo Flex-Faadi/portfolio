@@ -99,10 +99,10 @@
           <div class="col-12 col-lg-8 home-content text-center">
             <h1 class="home-name">Muhammad <span>Fahad</span></h1>
             <h4 class="cd-headline clip home-headline">
-              I’m
+              I’m a
               <span class="cd-words-wrapper single-headline"
-                ><b class="is-visible">MERN-Stack Developer</b
-                ><b>Hybrid App Developer</b></span
+                ><b class="is-visible">Web Developer</b
+                ><b>Android Developer</b></span
               >
             </h4>
           </div>
@@ -221,8 +221,9 @@
                             btn
                             content-download
                             button-main button-scheme
+                            disabled
                           "
-                          href="/cv/portfolio.pdf"
+                          href="#0"
                           role="button"
                           >Download CV</a
                         >
@@ -564,7 +565,7 @@
                         >
                         <p class="item-description">
                           I have done my matriculation from KPA in Computer
-                          Science. and Intermidiate from National College in PRE_ENGINEERING.
+                          Science. and Intermidiate from National College.
                         </p>
                       </div>
                       <div class="resume-item">
@@ -574,20 +575,22 @@
                           >- PAf KIET / 2020 - 2024</span
                         >
                         <p class="item-description">
-                          I m enrolled in BS-CS program at PAF-KIET University.
+                          I had join PAF KIET in 2020 and Currently I m enrolled
+                          in BSCS program.
                         </p>
                       </div>
                       <div class="resume-item">
                         <span class="item-arrow"></span>
                         <h5 class="item-title">
-                          MERN-Stack Development Course
+                          Full-Stack Development Course
                         </h5>
                         <span class="item-details"
                           >- Wow Education Valley -Jawan Pakistan/ 2020 -
                           2021</span
                         >
                         <p class="item-description">
-                          I Have Complete my Course in MERN Stack Development from WOW Education Valley.
+                          In the early 2020 i had started my learning with Wow
+                          education valley.
                         </p>
                       </div>
                     </div>
@@ -612,10 +615,11 @@
                         <span class="item-arrow"></span>
                         <h5 class="item-title">Front-End Developer</h5>
                         <span class="item-details"
-                          >Digital Graphiks / 2021 June - To 2021 Sep </span
+                          >Digital Graphiks / 2021 - present</span
                         >
                         <p class="item-description">
-                          I have Complete my Internship Period At Digital Graphiks.
+                          I m currently working as a Front-End developer at
+                          Digital Graphiks.
                         </p>
                       </div>
                       <div class="resume-item">
@@ -703,20 +707,6 @@
                         ></div>
                       </div>
                     </div>
-                    <div class="single-skill" data-percentage="80">
-                      <div class="skill-info">
-                        <span class="skill-name">Node (Express JS)</span
-                        ><span class="skill-percentage"></span>
-                      </div>
-                      <div class="progress skill-progress">
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div>
                   </div>
                   <div class="col-12 col-md-6">
                     <div class="single-skill" data-percentage="70">
@@ -761,23 +751,9 @@
                         ></div>
                       </div>
                     </div>
-                    <div class="single-skill" data-percentage="60">
+                    <div class="single-skill" data-percentage="90">
                       <div class="skill-info">
                         <span class="skill-name">SEO</span
-                        ><span class="skill-percentage"></span>
-                      </div>
-                      <div class="progress skill-progress">
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div>
-                    <div class="single-skill" data-percentage="70">
-                      <div class="skill-info">
-                        <span class="skill-name">MongoDB</span
                         ><span class="skill-percentage"></span>
                       </div>
                       <div class="progress skill-progress">
@@ -1181,24 +1157,18 @@
                       class="contact-form"
                       id="contact-form"
                       method="POST"
-                      action="https://formsubmit.co/fahadk123572@gmail.com"
+                      action="php/mail.php"
                     >
                       <h4 class="content-title">Message Me</h4>
                       <div class="row">
                         <div class="col-12 col-md-6 form-group">
-                          <!-- <input
-                            type="hidden"
-                            name="_next"
-                            value="./response/tankyou.html"
-                          /> -->
-                          <input type="hidden" name="_captcha" value="false">
                           <input
                             class="form-control"
                             id="contact-name"
                             type="text"
                             name="name"
                             placeholder="Name"
-                            required
+                            required=""
                           />
                         </div>
                         <div class="col-12 col-md-6 form-group">
@@ -1208,7 +1178,7 @@
                             type="email"
                             name="email"
                             placeholder="Email"
-                            required
+                            required=""
                           />
                         </div>
                         <div class="col-12 form-group">
@@ -1216,9 +1186,9 @@
                             class="form-control"
                             id="contact-subject"
                             type="text"
-                            name="_subject"
+                            name="subject"
                             placeholder="Subject"
-                            required
+                            required=""
                           />
                         </div>
                         <div class="col-12 form-group form-message">
@@ -1228,7 +1198,7 @@
                             name="message"
                             placeholder="Message"
                             rows="5"
-                            required
+                            required=""
                           ></textarea>
                         </div>
                         <div class="col-12 form-submit">
@@ -1236,7 +1206,6 @@
                             class="btn button-main button-scheme"
                             id="contact-submit"
                             type="submit"
-                            onsubmit="setTimeout(function(){window.location.reload();},2);"
                           >
                             Send Message
                           </button>
